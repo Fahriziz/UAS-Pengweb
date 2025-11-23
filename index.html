@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Perpustakaan Kota — Beranda</title>
+  <meta name="description" content="Perpustakaan Kota: katalog buku, layanan pinjam, acara dan sumber daya digital.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo perpus.jpg" alt="Logo Perpustakaan Kota" width="48" height="48">
+        <div>
+          <h1 class="site-title">Perpustakaan Kota</h1>
+          <p class="site-tag">Wawasan — Pengetahuan — Komunitas</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#katalog">Katalog</a></li>
+          <li><a href="#koleksi">Koleksi</a></li>
+          <li><a href="#acara">Acara</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section id="beranda" class="hero">
+      <div class="container">
+        <h2>Selamat datang di Perpustakaan Kota</h2>
+        <p>Temukan buku, e-book, dan acara komunitas yang mendukung pembelajaran sepanjang hayat.</p>
+
+        <form class="search-form" role="search" aria-label="Pencarian katalog">
+          <label for="q" class="visually-hidden">Cari buku, pengarang, ISBN</label>
+          <input id="q" name="q" type="search" placeholder="Cari judul, pengarang, ISBN...">
+          <button type="submit">Cari</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="katalog" class="container katalog">
+      <header class="section-header">
+        <h3>Katalog Terbaru</h3>
+        <p>Tambahan koleksi bulan ini — rekomendasi staf dan yang paling sering dipinjam.</p>
+      </header>
+
+      <div class="grid-layout">
+        <article class="book-card" aria-labelledby="book1-title">
+          <img src="book1.jpg" alt="Sampul buku: Belajar Statistik" class="book-cover">
+          <div class="card-body">
+            <h4 id="book1-title">Belajar Statistik</h4>
+            <p class="author">oleh R. Nugroho</p>
+            <p class="meta">Kategori: Pendidikan · Tersedia: 3</p>
+            <a class="btn" href="#">Detail</a>
+          </div>
+        </article>
+
+        <article class="book-card" aria-labelledby="book2-title">
+          <img src="book2.jpg" alt="Sampul buku: Sejarah Nusantara" class="book-cover">
+          <div class="card-body">
+            <h4 id="book2-title">Sejarah Nusantara</h4>
+            <p class="author">oleh S. Hartono</p>
+            <p class="meta">Kategori: Sejarah · Tersedia: 5</p>
+            <a class="btn" href="#">Detail</a>
+          </div>
+        </article>
+
+        <article class="book-card" aria-labelledby="book3-title">
+          <img src="book3.jpg" alt="Sampul buku: Panduan Menulis" class="book-cover">
+          <div class="card-body">
+            <h4 id="book3-title">Panduan Menulis</h4>
+            <p class="author">oleh A. Widjaja</p>
+            <p class="meta">Kategori: Referensi · Tersedia: 2</p>
+            <a class="btn" href="#">Detail</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="more"><a href="#koleksi">Lihat semua koleksi →</a></p>
+    </section>
+
+    <section id="koleksi" class="container">
+      <header class="section-header">
+        <h3>Koleksi Spesial</h3>
+      </header>
+
+      <div class="two-col">
+        <div>
+          <h4>Koleksi Digital</h4>
+          <p>Akses e-book, jurnal, dan arsip digital kami. Pengguna terdaftar dapat mengunduh atau membaca online.</p>
+          <ul>
+            <li>E-book populer</li>
+            <li>Jurnal ilmiah</li>
+            <li>Arsip lokal</li>
+          </ul>
+        </div>
+        <aside aria-labelledby="sidebar-title">
+          <h4 id="sidebar-title">Filter</h4>
+          <form>
+            <label>
+              <input type="checkbox"> Anak-anak
+            </label>
+            <label>
+              <input type="checkbox"> Remaja
+            </label>
+            <label>
+              <input type="checkbox"> Dewasa
+            </label>
+            <button type="submit">Terapkan</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section id="acara" class="container section-events">
+      <header class="section-header">
+        <h3>Acara Mendatang</h3>
+      </header>
+
+      <ul class="events-list">
+        <li>
+          <time datetime="2025-12-05">5 Des 2025</time> — Workshop Menulis Kreatif
+        </li>
+        <li>
+          <time datetime="2026-01-14">14 Jan 2026</time> — Diskusi Buku: Sejarah Peradaban
+        </li>
+      </ul>
+
+      <p><a href="#">Lihat kalender acara</a></p>
+    </section>
+
+    <section id="tentang" class="container about">
+      <header class="section-header">
+        <h3>Tentang Kami</h3>
+      </header>
+
+      <p>Perpustakaan Kota berdedikasi menyediakan sumber belajar, ruang komunitas, dan layanan referensi untuk semua umur. Nomor layanan: <a href="tel:+62211234567">+62 21 1234567</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Perpustakaan Kota. Semua hak dilindungi.</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#privasi">Kebijakan Privasi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
 
